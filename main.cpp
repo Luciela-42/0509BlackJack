@@ -44,6 +44,23 @@ int main()
 	for (int k = 0; k < 6; k++)
 	{
 		DrawCard[k] = SplitCard[k] % 13;
+		int Type = SplitCard[k] / 13;
+
+		switch (Type)
+		{
+		case 0:
+			cout << "¢¼";
+			break;
+		case 1:
+			cout << "¢¾";
+			break;
+		case 2:
+			cout << "¢À";
+			break;
+		case 3:
+			cout << "¡ß";
+			break;
+		}
 
 		if (DrawCard[k] == 12)
 		{
@@ -87,7 +104,7 @@ int main()
 	}
 
 	cout << "Player : " << PlayerSum << endl;
-	cout << "Ai : " << AISum << endl;
+	cout << "AI : " << AISum << endl;
 
 	if (PlayerSum > 21 && AISum > 21)
 	{
