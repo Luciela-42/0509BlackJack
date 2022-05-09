@@ -1,3 +1,4 @@
+//카드 세장 한번에 뽑기
 #include <iostream>
 
 using namespace std;
