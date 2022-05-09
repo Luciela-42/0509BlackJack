@@ -20,7 +20,7 @@ int main()
 	}
 
 
-	for (int i = 0; i < 50; ++i) //Ä«µå ¼ÅÇÃ
+	for (int i = 0; i < 52; ++i) //Ä«µå ¼ÅÇÃ
 	{
 		int X = rand() % CARD;
 		int Y = rand() % CARD;
@@ -31,7 +31,7 @@ int main()
 		Data[Y] = Temp;
 	}
 
-	for (int k = 0; k < 4; ++k) //Ä«µå »Ì±â
+	for (int k = 0; k < 6; ++k) //Ä«µå »Ì±â
 	{
 		SplitCard[k] = Data[k];
 
@@ -66,7 +66,7 @@ int main()
 		}
 		else
 		{
-			DrawCard[k] + 1;
+			DrawCard[k] += 1;
 			cout << DrawCard[k] << " ";
 		}
 
