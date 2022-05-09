@@ -11,7 +11,7 @@ int main()
 	int SplitCard[52] = { 0, };
 	int DrawCard[6] = { 0, };
 	int PlayerSum = 0;
-	int AiSum = 0;
+	int AISum = 0;
 
 	srand((unsigned int)time(NULL));
 
@@ -82,36 +82,36 @@ int main()
 		}
 		else
 		{
-			AiSum += DrawCard[j];
+			AISum += DrawCard[j];
 		}
 	}
 
 	cout << "Player : " << PlayerSum << endl;
-	cout << "Ai : " << AiSum << endl;
+	cout << "Ai : " << AISum << endl;
 
-	if (PlayerSum > 21 && AiSum > 21)
+	if (PlayerSum > 21 && AISum > 21)
 	{
-		cout << "Player Win" << endl;
+		cout << "Both Bust / Player Win" << endl;
 	}
 	else if (PlayerSum > 21)
 	{
-		cout << "Player Bust / Ai Win" << endl;
+		cout << "Player Bust / AI Win" << endl;
 	}
-	else if (AiSum > 21)
+	else if (AISum > 21)
 	{
-		cout << "Ai Bust / Player Win" << endl;
+		cout << "AI Bust / Player Win" << endl;
 	}
-	else if (PlayerSum == AiSum)
+	else if (PlayerSum == AISum)
 	{
 		cout << "Player Win" << endl;
 	}
-	else if (PlayerSum > AiSum)
+	else if (PlayerSum > AISum)
 	{
 		cout << "Player Win" << endl;
 	}
 	else
 	{
-		cout << "Ai Win" << endl;
+		cout << "AI Win" << endl;
 	}
 
 	return 0;
